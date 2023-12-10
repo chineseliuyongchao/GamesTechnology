@@ -1,8 +1,8 @@
 using UnityEngine;
 
-namespace Script.DesignPatterns
+namespace DesignPatterns.Script
 {
-    public class DesignPatterns : MonoBehaviour
+    public class DesignPatternsController : MonoBehaviour
     {
         // Start is called before the first frame update
         void Start()
