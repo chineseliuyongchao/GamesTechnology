@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DesignPatterns.Script.DesignPatterns
+namespace DesignPatterns.Script.PrototypePattern
 {
     /// <summary>
     /// 敌人

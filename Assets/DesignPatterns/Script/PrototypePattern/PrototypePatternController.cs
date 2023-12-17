@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace DesignPatterns.Script.DesignPatterns
+namespace DesignPatterns.Script.PrototypePattern
 {
     /// <summary>
     /// 原型模式
@@ -14,8 +14,7 @@ namespace DesignPatterns.Script.DesignPatterns
 
         private void Awake()
         {
-            _enemies = new List<Enemy>();
-            _enemies.Add(new Enemy("小兵", 100, new Knapsack("刀", "扎甲")));
+            _enemies = new List<Enemy> { new("小兵", 100, new Knapsack("刀", "扎甲")) };
             for (int i = 0; i < ENEMY_COUNT; i++)
             {
                 _enemies.Add((Enemy)_enemies[0].Clone());
